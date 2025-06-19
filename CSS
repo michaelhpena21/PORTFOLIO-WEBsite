@@ -1,0 +1,161 @@
+/* Fonts and Base Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1a1a40;
+  color: #f8a045;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Header Section */
+header {
+  padding: 80px 20px;
+  background-color: #121233;
+  color: #f8a045;
+}
+
+.cta {
+  background-color: #f8a045;
+  color: #1a1a40;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #d47e23;
+}
+
+/* Projects Section */
+.projects {
+  padding: 60px 20px;
+}
+
+.projects h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+/* Cards */
+.card {
+  background-color: #26264d;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 25px;
+  color: #f8a045;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.card-text {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 10px;
+}
+
+.btn {
+  background-color: #f8a045;
+  color: #1a1a40;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #d47e23;
+}
+
+/* Reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer */
+footer {
+  background-color: #0d0d26;
+  color: #f8a045;
+}
+
+/* Toggle Button */
+#modeToggleBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f8a045;
+  color: #1a1a40;
+  padding: 10px 15px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 999;
+  transition: background-color 0.3s ease;
+}
+
+#modeToggleBtn:hover {
+  background-color: #d47e23;
+}
+
+/* Light Mode Overrides */
+body.light-mode {
+  background-color: #ffffff;
+  color: #222;
+}
+
+body.light-mode header {
+  background-color: #f1f1f1;
+  color: #222;
+}
+
+body.light-mode .card {
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+body.light-mode .btn,
+body.light-mode .cta {
+  background-color: #007bff;
+  color: white;
+}
+
+body.light-mode .btn:hover,
+body.light-mode .cta:hover {
+  background-color: #0056b3;
+}
+
+body.light-mode footer {
+  background-color: #f1f1f1;
+  color: #222;
+}
+
+body.light-mode #modeToggleBtn {
+  background-color: #007bff;
+  color: white;
+}
+
+body.light-mode #modeToggleBtn:hover {
+  background-color: #0056b3;
+}
